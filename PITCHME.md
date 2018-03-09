@@ -11,7 +11,20 @@ here is a link [to google](https://www.google.com)
 *list one : one
   *list children
 
----
++++
+
+## Now this is the children slide
+
+**WOOHOOO**
+
+*not funny*
+
+Ordered List here
+1. One
+2. Two 
+3. Three
+
+-----
 
 ###### Smaller Title
 
