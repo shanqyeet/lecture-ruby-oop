@@ -188,7 +188,7 @@ You may have heard people say that everything in Ruby is an object. **If that's 
 
 ### What????
 
-Basically, "self" refers gives you access to the current object
+Basically, "self" gives you access to the current object
 
 +++
 
