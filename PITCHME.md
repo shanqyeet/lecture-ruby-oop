@@ -12,9 +12,9 @@ OOP is a programming language model organized around **objects** rather than **a
 
 ## Before OOP
 
-*Programming challenge has been about writing the logic and not defining the data.
+* Programming challenge has been about writing the logic and not defining the data.
 
-*Most programs were a list of instructions that acted on memory in the computer. 
+* Most programs were a list of instructions that acted on memory in the computer. 
 
 +++
 
