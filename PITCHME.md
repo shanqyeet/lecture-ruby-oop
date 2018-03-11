@@ -57,9 +57,9 @@ p "#{students[0] #{student[1]}"
 
 #or
 
-john = {"first_name":"john", "last_name":"Coder","age":"23"}
+john = {first_name:"john", last_name:"Coder",age:"23"}
 
-p "#{john[first_name]} #{john[last_name]}"
+p "#{john[:first_name]} #{john[:last_name]}"
 
 ```
 
@@ -144,7 +144,7 @@ end
 
 ```ruby
 class Student 
-	#you can write this 
+	#you can use this 
 	attr_accessor :first_name, :last_name, :age
 end 
 
