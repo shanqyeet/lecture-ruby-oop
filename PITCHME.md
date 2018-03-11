@@ -20,7 +20,7 @@ OOP is a programming language model organized around **objects** rather than **a
 
 ## working without class
 
-How would you store and manipulate information about a student?
+How would you store and manipulate information of a student?
 
 +++
 
@@ -55,9 +55,9 @@ end
 You already know **Local  & Global Variable**
 
 ## Introducing :
-  *Instance Variable - available across methods, example **@name** 
+  * Instance Variable - available across methods, example **@name** 
 
-  *Class Variable - available across different object, example **@@name**
+  * Class Variable - available across different object, example **@@name**
 
 ---
 
