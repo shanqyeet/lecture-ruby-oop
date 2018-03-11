@@ -4,33 +4,76 @@
 
 +++
 
-## What is it?
+### What is it?
 OOP is a programming language model organized around **objects** rather than **actions** *and* **data** rather than **logic**
 
++++
+
+### Example 
+
+```
+program Fibonacci;
+
+function fib(n: Integer): Integer;
+var a: Integer = 1;
+    b: Integer = 1;
+    f: Integer;
+    i: Integer;
+begin
+  if (n = 1) or (n = 2) then
+     fib := 1
+  else
+    begin
+      for i := 3 to n do
+      begin
+         f := a + b;
+         b := a;
+         a := f;
+      end;
+      fib := f;
+    end;
+end;
+
+begin
+  WriteLn(fib(6));
+end.
+
+```
 
 +++
 
-## Before OOP
-
-* Programming challenge has been about writing the logic and not defining the data.
-
-* Most programs were a list of instructions that acted on memory in the computer. 
-
-+++
-
-## working without class
+### working without class
 
 How would you store and manipulate information of a student?
 
 +++
 
-## How OOP boosts speed and efficiency
+### Example
+
+```ruby
+students = [["first_name", "last_name", "age"]]
+
+p "#{students[0] #{student[1]}"
+
+#or
+
+john = {"first_name":"john", "last_name":"Coder","age":"23"}
+
+p "#{john[first_name]} #{john[last_name]}"
+
+```
+
+How would you call the student's full name? No so efficient isnt it?
+
++++
+
+### How OOP boosts speed and efficiency
 
 In our daily life - it is natural that we think of things as objects with attribute and behavior hence the way we interact with them.
 
 ---
 
-# class in Ruby 
+# Class in Ruby 
 
 put simply - an Object:
   1. has common attributes
@@ -39,14 +82,14 @@ put simply - an Object:
 
 +++
 
-## Example of class
+### Example of class
 
 ```ruby
 class Student 
-  def initialize(name, age, gender)
-    @name = name 
+  def initialize(first_name, last_name, age)
+    @first_name = first_name 
+    @last_name = last_name
     @age = age.to_i 
-    @gender = gender
   end  
 end 
 
@@ -54,7 +97,7 @@ end
 +++
 You already know **Local  & Global Variable**
 
-## Introducing :
+### Introducing :
   * Instance Variable - available across methods, example **@name** 
 
   * Class Variable - available across different object, example **@@name**
@@ -65,7 +108,7 @@ You already know **Local  & Global Variable**
 
 +++
 
-## Reading the object's attributes
+### Reading the object's attributes
 
 ```ruby
 class Student 
@@ -81,7 +124,7 @@ end
 ```
 +++
 
-## Make changes to the object's attributes
+### Make changes to the object's attributes
 
 ```ruby
 class Student
@@ -97,22 +140,28 @@ end
 ```
 +++
 
-## There is actually shortcuts
+### There is actually shortcuts
 
 ```ruby
 class Student 
 	#you can write this 
-	attr_accessor :name, :age
-
-	#or these
-	attr_reader :name, :age 
-	attr_writer :age 
+	attr_accessor :first_name, :last_name, :age
 end 
 
 ```  
 +++
 
-## How about some custom functions?
+### Or.. you can write them this way
+```
+class Student
+  attr_reader :name, :age 
+  attr_writer :name, :age 
+end
+```
+
++++
+
+### How about some custom functions?
 
 ```ruby
 class Student 
@@ -137,7 +186,7 @@ You may have heard people say that everything in Ruby is an object. **If that's 
 
 +++
 
-## What????
+### What????
 
 Basically, "self" refers gives you access to the current object
 
